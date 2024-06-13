@@ -20,9 +20,9 @@ import modelo.validar;
  *
  * @author pablo
  */
-@WebServlet(name = "conector", urlPatterns = {"/conector"})
-public class conector extends HttpServlet {
 
+public class conector extends HttpServlet {
+//indica qué patrones de URL debe manejar el servlet, es decir, a qué solicitudes HTTP debe responder.
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -73,18 +73,22 @@ public class conector extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         // processRequest(request, response);
+        // Obtiene el valor del parámetro "accion" de la solicitud HTTP POST.
         String action = request.getParameter("accion");
+         // Inicializa la variable "nextPage" que contendrá la URL a la que se redirigirá.
         String nextPage = "";
 
         if (action != null) {
+            // Utiliza una estructura switch para determinar la acción a tomar según el valor de "accion".
             switch (action) {
                 case "Registrar":
+                    // Si "accion" es "Registrar", asigna la URL correspondiente a "nextPage".
                     nextPage = inter1;
                     break;
-                case "Inquilinos":
+                case "Registros":
                     nextPage = inter2;
                     break;
-                case "Contratos":
+                case "Contratos y Pagos":
                     nextPage = inter3;
                     break;
                 case "Propiedades":
@@ -96,7 +100,7 @@ public class conector extends HttpServlet {
             }
         }
 
-       response.sendRedirect(nextPage);
+       response.sendRedirect(nextPage); // Redirige al cliente a otra página.
     }
 
     /**

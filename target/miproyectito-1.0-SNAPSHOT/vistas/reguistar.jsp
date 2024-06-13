@@ -3,7 +3,7 @@
     Created on : 4 jun. 2024, 10:16:45
     Author     : pablo
 --%>
-
+<%--REGISTRO DE INQUILINOS--%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <jsp:include page="include/narvar.jsp"/>
@@ -38,10 +38,11 @@
                             <label for="exampleInputEmail1" class="form-label">Telefono del inquilino</label> <!-- Etiqueta para el cuarto campo de entrada -->
                             <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> <!-- Campo de entrada para el correo electrónico -->
                         </div>
-                    </div>    
-                    <div class="row"> <!-- Fila -->
-                        <div class="col-md-2 mx-auto"> <!-- Columna de 2 columnas con margen automático en los lados -->
-                            <button type="submit" class="btn btn-secondary">GUADAR</button> <!-- Botón de envío del formulario -->
+                    </div>
+                    <div class="mt-3"> <!-- Espacio en blanco arriba del botón -->
+                        <div class="row"> <!-- Fila -->
+                            <div class="col-md-12 d-flex justify-content-center"> <!-- Columna de 12 columnas con botones centrados -->
+                            <button type="submit" class="btn btn-secondary mx-2">GUARDAR</button> <!-- Botón de envío del formulario -->
                         </div>
                     </div>
                 </form>

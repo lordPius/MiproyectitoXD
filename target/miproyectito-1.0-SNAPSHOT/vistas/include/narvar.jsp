@@ -68,10 +68,10 @@
                             <input type="submit" name="accion" class="nav-link btn" value="Registrar">
                         </li>
                         <li class="nav-item">
-                            <input type="submit" name="accion" class="nav-link btn" value="Inquilinos">
+                            <input type="submit" name="accion" class="nav-link btn" value="Registros">
                         </li>
                         <li class="nav-item">
-                            <input type="submit" name="accion" class="nav-link btn" value="Contratos">
+                            <input type="submit" name="accion" class="nav-link btn" value="Contratos y Pagos">
                         </li>
                         <li class="nav-item">
                             <input type="submit" name="accion" class="nav-link btn" value="Propiedades">

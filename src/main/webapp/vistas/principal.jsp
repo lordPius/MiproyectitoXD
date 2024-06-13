@@ -3,7 +3,7 @@
     Created on : 28 may. 2024, 21:41:33
     Author     : pablo
 --%>
-
+<%--ESTA ES LA PESTAÑA DEL INICIO--%>  
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <jsp:include page="include/narvar.jsp"/>
 
